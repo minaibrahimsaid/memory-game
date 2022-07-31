@@ -70,6 +70,7 @@ export default function Home() {
           data.map((image) => {
             return (
               <Card
+                key={image.id}
                 {...image}
                 onFlip={onFlip}
                 flip={selectedImage.some((img) => img.id === image.id)}
