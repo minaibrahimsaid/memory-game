@@ -1,0 +1,41 @@
+.container{
+  margin: 30px 30px 5px 5px ;
+}
+
+.gameContainer {
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.control {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.slider {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .gameContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .gameContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gameContainer,
+  .controls {
+    margin: 30px;
+  }
+}
